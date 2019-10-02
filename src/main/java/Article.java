@@ -6,6 +6,7 @@ public class Article
     float wage;
     String magazineName;
     int numberOfPages;
+    float income;
 
     public Article() {
     }
@@ -17,6 +18,15 @@ public class Article
         this.wage = wage;
         this.magazineName = magazineName;
         this.numberOfPages = numberOfPages;
+        calculateIncome();
+    }
+
+    public float getIncome() {
+        return income;
+    }
+
+    public void setIncome(float income) {
+        this.income = income;
     }
 
     public int getNumber() {
@@ -55,7 +65,7 @@ public class Article
         return magazineName;
     }
 
-    public void setMagazineNmae(String magazineName) {
+    public void setMagazineName(String magazineName) {
         this.magazineName = magazineName;
     }
 
@@ -67,6 +77,10 @@ public class Article
         this.numberOfPages = numberOfPages;
     }
 
+    void calculateIncome()
+    {
+        this.income = (float)(0.1 * wage * numberOfPages);
+    }
     @Override
     public String toString() {
         return "Article{" +
@@ -76,6 +90,7 @@ public class Article
                 ", wage=" + wage +
                 ", magazineName='" + magazineName + '\'' +
                 ", numberOfPages=" + numberOfPages +
+                ", income=" + income +
                 '}';
     }
 }

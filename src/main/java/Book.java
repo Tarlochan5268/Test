@@ -6,6 +6,7 @@ public class Book
     float price;
     String publisher;
     int numberOfCopies;
+    float income;
 
     public Book() {
     }
@@ -17,8 +18,13 @@ public class Book
         this.price = price;
         this.publisher = publisher;
         this.numberOfCopies = numberOfCopies;
+        calculateIncome();
     }
-
+    void calculateIncome()
+    {
+        float sub = price * numberOfCopies;
+        this.income = (float)((sub)-(0.2)*sub);
+    }
     public int getNumber() {
         return Number;
     }
