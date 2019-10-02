@@ -50,6 +50,15 @@ public class MainClass
             switch (caseNumber)
             {
                 case 1 :
+                    System.out.println("Enter Last Name : ");
+                    String lastName = scanner.nextLine();
+                    for (Publication obj:publications)
+                    {
+                        if(obj.getAuthor().getLastName()==lastName)
+                        {
+                            System.out.println(obj.toString());
+                        }
+                    }
 
                 case 2 :
                     float totalIncome = 0;
