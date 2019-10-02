@@ -59,7 +59,7 @@ public class MainClass
                             System.out.println(obj.toString());
                         }
                     }
-
+                break;
                 case 2 :
                     float totalIncome = 0;
                     for (Publication obj:publications)
