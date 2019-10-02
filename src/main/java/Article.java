@@ -74,7 +74,7 @@ public class Article
                 ", title='" + title + '\'' +
                 ", author=" + author +
                 ", wage=" + wage +
-                ", magazineNmae='" + magazineName + '\'' +
+                ", magazineName='" + magazineName + '\'' +
                 ", numberOfPages=" + numberOfPages +
                 '}';
     }
