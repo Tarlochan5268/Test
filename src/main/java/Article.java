@@ -4,18 +4,18 @@ public class Article
     String title;
     Author author;
     float wage;
-    String magazineNmae;
+    String magazineName;
     int numberOfPages;
 
     public Article() {
     }
 
-    public Article(int number, String title, Author author, float wage, String magazineNmae, int numberOfPages) {
+    public Article(int number, String title, Author author, float wage, String magazineName, int numberOfPages) {
         Number = number;
         this.title = title;
         this.author = author;
         this.wage = wage;
-        this.magazineNmae = magazineNmae;
+        this.magazineName = magazineName;
         this.numberOfPages = numberOfPages;
     }
 
@@ -51,12 +51,12 @@ public class Article
         this.wage = wage;
     }
 
-    public String getMagazineNmae() {
-        return magazineNmae;
+    public String getMagazineName() {
+        return magazineName;
     }
 
-    public void setMagazineNmae(String magazineNmae) {
-        this.magazineNmae = magazineNmae;
+    public void setMagazineNmae(String magazineName) {
+        this.magazineName = magazineName;
     }
 
     public int getNumberOfPages() {
@@ -74,7 +74,7 @@ public class Article
                 ", title='" + title + '\'' +
                 ", author=" + author +
                 ", wage=" + wage +
-                ", magazineNmae='" + magazineNmae + '\'' +
+                ", magazineNmae='" + magazineName + '\'' +
                 ", numberOfPages=" + numberOfPages +
                 '}';
     }
