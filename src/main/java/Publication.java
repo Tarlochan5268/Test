@@ -14,7 +14,10 @@ public class Publication
                 ", income=" + income +
                 '}';
     }
+    void calculateIncome()
+    {
 
+    }
     public Publication() {
     }
 

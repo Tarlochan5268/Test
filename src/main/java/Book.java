@@ -22,8 +22,12 @@ public class Book extends Publication
     }
     void calculateIncome()
     {
-        float sub = price * numberOfCopies;
-        this.income = (float)((sub)-(0.2)*sub);
+        float sub = this.price * (float) this.numberOfCopies;
+        System.out.println("sub : "+sub);
+        float sub2 = (float) (sub*0.2);
+        System.out.println("sub2 : "+sub2);
+        income = (float) (sub - sub2);
+        System.out.println("innnn : "+income);
     }
     public int getNumber() {
         return Number;
@@ -43,6 +47,16 @@ public class Book extends Publication
 
     public Author getAuthor() {
         return author;
+    }
+
+    @Override
+    public float getIncome() {
+        return income;
+    }
+
+    @Override
+    public void setIncome(float income) {
+        this.income = income;
     }
 
     public void setAuthor(Author author) {
