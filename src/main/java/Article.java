@@ -1,4 +1,4 @@
-public class Article
+public class Article extends Publication
 {
     int Number;
     String title;
